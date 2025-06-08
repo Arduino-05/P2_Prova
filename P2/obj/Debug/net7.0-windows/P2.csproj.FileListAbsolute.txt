@@ -1,0 +1,17 @@
+C:\Users\lardu\source\repos\P2_Prova\P2\bin\Debug\net7.0-windows\P2.exe
+C:\Users\lardu\source\repos\P2_Prova\P2\bin\Debug\net7.0-windows\P2.deps.json
+C:\Users\lardu\source\repos\P2_Prova\P2\bin\Debug\net7.0-windows\P2.runtimeconfig.json
+C:\Users\lardu\source\repos\P2_Prova\P2\bin\Debug\net7.0-windows\P2.dll
+C:\Users\lardu\source\repos\P2_Prova\P2\bin\Debug\net7.0-windows\P2.pdb
+C:\Users\lardu\source\repos\P2_Prova\P2\obj\Debug\net7.0-windows\P2.Form1.resources
+C:\Users\lardu\source\repos\P2_Prova\P2\obj\Debug\net7.0-windows\P2.csproj.GenerateResource.cache
+C:\Users\lardu\source\repos\P2_Prova\P2\obj\Debug\net7.0-windows\P2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lardu\source\repos\P2_Prova\P2\obj\Debug\net7.0-windows\P2.AssemblyInfoInputs.cache
+C:\Users\lardu\source\repos\P2_Prova\P2\obj\Debug\net7.0-windows\P2.AssemblyInfo.cs
+C:\Users\lardu\source\repos\P2_Prova\P2\obj\Debug\net7.0-windows\P2.csproj.CoreCompileInputs.cache
+C:\Users\lardu\source\repos\P2_Prova\P2\obj\Debug\net7.0-windows\P2.sourcelink.json
+C:\Users\lardu\source\repos\P2_Prova\P2\obj\Debug\net7.0-windows\P2.dll
+C:\Users\lardu\source\repos\P2_Prova\P2\obj\Debug\net7.0-windows\refint\P2.dll
+C:\Users\lardu\source\repos\P2_Prova\P2\obj\Debug\net7.0-windows\P2.pdb
+C:\Users\lardu\source\repos\P2_Prova\P2\obj\Debug\net7.0-windows\P2.genruntimeconfig.cache
+C:\Users\lardu\source\repos\P2_Prova\P2\obj\Debug\net7.0-windows\ref\P2.dll
