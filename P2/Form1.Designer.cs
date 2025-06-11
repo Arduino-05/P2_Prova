@@ -77,7 +77,6 @@
             label3.Size = new Size(169, 37);
             label3.TabIndex = 4;
             label3.Text = "BEM VINDO";
-            label3.Click += label3_Click;
             // 
             // btn_login
             // 
@@ -89,6 +88,7 @@
             btn_login.TabIndex = 5;
             btn_login.Text = "ENTRAR";
             btn_login.UseVisualStyleBackColor = false;
+            btn_login.Click += btn_login_Click;
             // 
             // Form1
             // 
