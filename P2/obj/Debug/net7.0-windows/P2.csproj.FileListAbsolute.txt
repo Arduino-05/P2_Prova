@@ -15,3 +15,10 @@ C:\Users\lardu\source\repos\P2_Prova\P2\obj\Debug\net7.0-windows\refint\P2.dll
 C:\Users\lardu\source\repos\P2_Prova\P2\obj\Debug\net7.0-windows\P2.pdb
 C:\Users\lardu\source\repos\P2_Prova\P2\obj\Debug\net7.0-windows\P2.genruntimeconfig.cache
 C:\Users\lardu\source\repos\P2_Prova\P2\obj\Debug\net7.0-windows\ref\P2.dll
+C:\Users\lardu\source\repos\P2_Prova\P2\obj\Debug\net7.0-windows\P2..resources
+C:\Users\lardu\source\repos\P2_Prova\P2\obj\Debug\net7.0-windows\P2.Clientes.resources
+C:\Users\lardu\source\repos\P2_Prova\P2\obj\Debug\net7.0-windows\P2.consultar_pedidos.resources
+C:\Users\lardu\source\repos\P2_Prova\P2\obj\Debug\net7.0-windows\P2.menu.resources
+C:\Users\lardu\source\repos\P2_Prova\P2\obj\Debug\net7.0-windows\P2.pedidos.resources
+C:\Users\lardu\source\repos\P2_Prova\P2\obj\Debug\net7.0-windows\P2.Produtos.resources
+C:\Users\lardu\source\repos\P2_Prova\P2\obj\Debug\net7.0-windows\P2.usuario.resources

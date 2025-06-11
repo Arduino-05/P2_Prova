@@ -10,6 +10,16 @@ namespace P2
         }
         private string caminho_arquivo = "c:/Users/lardu/Documents/usuario.csv";
 
+        private void inicia_arquivo()
+        {
+            if (!File.Exists(caminho_arquivo))
+            {
+                using (StreamWriter aq = new StreamWriter(caminho_arquivo))
+                {
+                    aq.WriteLine("Login,Senha");
+                }
+            }
+        }
 
         private void btn_login_Click(object sender, EventArgs e)
         {
@@ -54,14 +64,6 @@ namespace P2
             MessageBox.Show("Dados invalidos");
         }
 
-
-        private void inicia_arquivo()
-        {
-            using (StreamWriter aq = new StreamWriter(caminho_arquivo))
-            {
-                aq.WriteLine("Login,Senha");
-            }
-        }
 
     }
 }

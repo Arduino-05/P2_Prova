@@ -1,6 +1,9 @@
-﻿namespace P2
+﻿using System;
+using System.Windows.Forms;
+
+namespace P2
 {
-    partial class _
+    public partial class _ : Form
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +32,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Text = "_";
         }
