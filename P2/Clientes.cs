@@ -147,7 +147,17 @@ namespace P2
 
         private void data_clientes_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = data_clientes.Rows[e.RowIndex];
 
+                text_nome.Text = row.Cells[0].Value?.ToString();
+                text_cpf.Text = row.Cells[1].Value?.ToString();
+                text_email.Text = row.Cells[2].Value?.ToString();
+                text_cep.Text = row.Cells[3].Value?.ToString();
+                text_tele.Text = row.Cells[4].Value?.ToString();
+                text_zap.Text = row.Cells[5].Value?.ToString();
+            }
         }
 
         private void carregar_clientes()
