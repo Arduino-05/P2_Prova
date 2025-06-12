@@ -99,22 +99,26 @@
             // 
             // btn_add
             // 
+            btn_add.BackColor = SystemColors.ActiveCaptionText;
+            btn_add.ForeColor = SystemColors.ControlLight;
             btn_add.Location = new Point(625, 121);
             btn_add.Name = "btn_add";
             btn_add.Size = new Size(75, 23);
             btn_add.TabIndex = 7;
             btn_add.Text = "Adicionar";
-            btn_add.UseVisualStyleBackColor = true;
+            btn_add.UseVisualStyleBackColor = false;
             btn_add.Click += btn_add_Click;
             // 
             // btn_finalizar
             // 
+            btn_finalizar.BackColor = SystemColors.ActiveCaptionText;
+            btn_finalizar.ForeColor = SystemColors.ControlLight;
             btn_finalizar.Location = new Point(625, 318);
             btn_finalizar.Name = "btn_finalizar";
             btn_finalizar.Size = new Size(75, 23);
             btn_finalizar.TabIndex = 8;
             btn_finalizar.Text = "Finalizar";
-            btn_finalizar.UseVisualStyleBackColor = true;
+            btn_finalizar.UseVisualStyleBackColor = false;
             btn_finalizar.Click += btn_finalizar_Click;
             // 
             // text_qtde
@@ -162,12 +166,14 @@
             // 
             // btn_buscar
             // 
+            btn_buscar.BackColor = SystemColors.ActiveCaptionText;
+            btn_buscar.ForeColor = SystemColors.ControlLight;
             btn_buscar.Location = new Point(179, 168);
             btn_buscar.Name = "btn_buscar";
             btn_buscar.Size = new Size(75, 23);
             btn_buscar.TabIndex = 14;
             btn_buscar.Text = "Buscar";
-            btn_buscar.UseVisualStyleBackColor = true;
+            btn_buscar.UseVisualStyleBackColor = false;
             btn_buscar.Click += btn_buscar_Click;
             // 
             // list_itens
@@ -183,6 +189,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(800, 450);
             Controls.Add(list_itens);
             Controls.Add(btn_buscar);
