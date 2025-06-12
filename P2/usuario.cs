@@ -15,6 +15,7 @@ namespace P2
         public usuario()
         {
             InitializeComponent();
+            iniciar_arquivo();
         }
 
         private string caminho_arquivo = "c:/Users/lardu/Documents/usuario.csv";

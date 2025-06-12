@@ -188,6 +188,7 @@
             Controls.Add(text_cpf);
             Name = "pedidos";
             Text = "pedidos";
+            Load += pedidos_Load;
             ((System.ComponentModel.ISupportInitialize)bindingSource1).EndInit();
             ((System.ComponentModel.ISupportInitialize)data_itens).EndInit();
             ResumeLayout(false);
