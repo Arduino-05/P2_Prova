@@ -99,5 +99,16 @@ namespace P2
         {
             carregar_produtos();
         }
+
+        private void data_produto_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = data_produto.Rows[e.RowIndex];
+                text_nome.Text = row.Cells[0].Value?.ToString();
+                text_preco.Text = row.Cells[1].Value?.ToString();
+                text_descricao.Text = row.Cells[2].Value?.ToString();
+            }
+        }
     }
 }

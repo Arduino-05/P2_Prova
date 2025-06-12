@@ -118,6 +118,7 @@
             data_produto.RowTemplate.Height = 25;
             data_produto.Size = new Size(290, 150);
             data_produto.TabIndex = 8;
+            data_produto.CellClick += data_produto_CellClick;
             // 
             // btn_deletar
             // 
