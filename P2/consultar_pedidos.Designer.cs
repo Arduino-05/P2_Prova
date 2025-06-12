@@ -70,6 +70,7 @@
             list_pedidos.Size = new Size(245, 119);
             list_pedidos.TabIndex = 3;
             list_pedidos.UseCompatibleStateImageBehavior = false;
+            list_pedidos.SelectedIndexChanged += list_pedidos_SelectedIndexChanged;
             // 
             // list_itens
             // 

@@ -53,7 +53,7 @@ namespace P2
 
             if (string.IsNullOrEmpty(cpf)) return;
 
-            var linhas = File.ReadAllLines(caminho_pedidos).Skip(1); 
+            var linhas = File.ReadAllLines(caminho_pedidos).Skip(1);
 
             foreach (var linha in linhas)
             {
@@ -75,6 +75,28 @@ namespace P2
             {
                 MessageBox.Show("Nenhum pedido encontrado para este CPF.");
             }
+        }
+
+        private void list_pedidos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            {
+                if (list_pedidos.SelectedItems.Count == 0) return;
+
+                list_itens.Items.Clear();
+                label_total.Text = "";
+
+                var itemSelecionado = list_pedidos.SelectedItems[0];
+                var dados = (PedidoInfo)itemSelecionado.Tag;
+
+                string[] itensSeparados = dados.Itens.Split('|');
+                foreach (var i in itensSeparados)
+                {
+                    list_itens.Items.Add(i.Trim());
+                }
+
+                label_total.Text = $"Total: R${dados.Total}";
+            }
+
         }
     }
 }
