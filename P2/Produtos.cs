@@ -10,11 +10,30 @@ using System.Windows.Forms;
 
 namespace P2
 {
-    public partial class Produtos: Form
+    public partial class Produtos : Form
     {
         public Produtos()
         {
             InitializeComponent();
+            iniciar_arquivo();
+        }
+
+        private string caminho_arquivo = "c:/Users/lardu/Documents/produtos.csv";
+
+        private void iniciar_arquivo()
+        {
+            if (!File.Exists(caminho_arquivo))
+            {
+                using (StreamWriter aq = new StreamWriter(caminho_arquivo))
+                {
+                    aq.WriteLine("Nome;Preço;Descricao");
+                }
+            }
+        }
+
+        private void btn_salvar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
