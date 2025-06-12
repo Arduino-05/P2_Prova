@@ -137,6 +137,7 @@
             btn_editar.TabIndex = 10;
             btn_editar.Text = "Editar";
             btn_editar.UseVisualStyleBackColor = true;
+            btn_editar.Click += btn_editar_Click;
             // 
             // Produtos
             // 

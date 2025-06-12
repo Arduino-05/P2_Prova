@@ -110,5 +110,21 @@ namespace P2
                 text_descricao.Text = row.Cells[2].Value?.ToString();
             }
         }
+
+        private void btn_editar_Click(object sender, EventArgs e)
+        {
+            if (data_produto.CurrentRow == null) return;
+            int index = data_produto.CurrentRow.Index;
+            string[] linhas = File.ReadAllLines(caminho_arquivo).ToArray();
+            if (index + 1 >= linhas.Length) return;
+            string novaLinha = $"{text_nome.Text};{text_preco.Text};{text_descricao.Text}";
+            linhas[index + 1] = novaLinha;
+            File.WriteAllLines(caminho_arquivo, linhas);
+            MessageBox.Show("Produto editado com sucesso!");
+            carregar_produtos();
+            text_nome.Clear();
+            text_preco.Clear();
+            text_descricao.Clear();
+        }
     }
 }
