@@ -28,10 +28,11 @@ namespace P2
             {
                 using (StreamWriter aq = new StreamWriter(caminho_arquivo))
                 {
-                    aq.WriteLine("Nome,CPF,Email,Endereco,Telefone,Zap");
+                    aq.WriteLine("Nome;CPF;Email;Endereco;Telefone;Zap");
                 }
             }
         }
+
 
         private void btn_voltar_Click(object sender, EventArgs e)
         {
@@ -84,11 +85,6 @@ namespace P2
             }
         }
 
-
-
-
-
-
         private void btn_cadastrar_Click(object sender, EventArgs e)
         {
             string nome = text_nome.Text.Trim();
@@ -137,6 +133,60 @@ namespace P2
         private void text_cep_Leave(object sender, EventArgs e)
         {
             buscar_end();
+        }
+
+        private void btn_editar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_deletar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void data_clientes_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void carregar_clientes()
+        {
+            if (!File.Exists(caminho_arquivo))
+                return;
+
+            DataTable tabela = new DataTable();
+            tabela.Columns.Add("Nome");
+            tabela.Columns.Add("CPF");
+            tabela.Columns.Add("Email");
+            tabela.Columns.Add("Endereço");
+            tabela.Columns.Add("Telefone");
+            tabela.Columns.Add("Zap");
+
+            try
+            {
+                string[] linhas = File.ReadAllLines(caminho_arquivo);
+
+                for (int i = 1; i < linhas.Length; i++)
+                {
+                    string[] dados = linhas[i].Split(';');
+                    if (dados.Length == 6)
+                        tabela.Rows.Add(dados);
+                }
+
+                data_clientes.DataSource = tabela;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erro ao carregar os dados: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+
+        private void Clientes_Load(object sender, EventArgs e)
+        {
+            carregar_clientes();
+
         }
     }
 }

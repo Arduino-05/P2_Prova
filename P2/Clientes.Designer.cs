@@ -43,10 +43,10 @@
             label6 = new Label();
             label7 = new Label();
             btn_voltar = new Button();
-            dataGridView1 = new DataGridView();
+            data_clientes = new DataGridView();
             btn_deletar = new Button();
             btn_editar = new Button();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)data_clientes).BeginInit();
             SuspendLayout();
             // 
             // btn_cadastrar
@@ -185,14 +185,15 @@
             btn_voltar.UseVisualStyleBackColor = false;
             btn_voltar.Click += btn_voltar_Click;
             // 
-            // dataGridView1
+            // data_clientes
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(325, 183);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(272, 150);
-            dataGridView1.TabIndex = 19;
+            data_clientes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            data_clientes.Location = new Point(325, 183);
+            data_clientes.Name = "data_clientes";
+            data_clientes.RowTemplate.Height = 25;
+            data_clientes.Size = new Size(272, 150);
+            data_clientes.TabIndex = 19;
+            data_clientes.CellContentClick += data_clientes_CellContentClick;
             // 
             // btn_deletar
             // 
@@ -203,6 +204,7 @@
             btn_deletar.TabIndex = 20;
             btn_deletar.Text = "Deletar";
             btn_deletar.UseVisualStyleBackColor = false;
+            btn_deletar.Click += btn_deletar_Click;
             // 
             // btn_editar
             // 
@@ -213,6 +215,7 @@
             btn_editar.TabIndex = 21;
             btn_editar.Text = "Editar";
             btn_editar.UseVisualStyleBackColor = false;
+            btn_editar.Click += btn_editar_Click;
             // 
             // Clientes
             // 
@@ -222,7 +225,7 @@
             ClientSize = new Size(638, 450);
             Controls.Add(btn_editar);
             Controls.Add(btn_deletar);
-            Controls.Add(dataGridView1);
+            Controls.Add(data_clientes);
             Controls.Add(btn_voltar);
             Controls.Add(label7);
             Controls.Add(label6);
@@ -241,7 +244,8 @@
             ForeColor = SystemColors.Control;
             Name = "Clientes";
             Text = "Clientes";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            Load += Clientes_Load;
+            ((System.ComponentModel.ISupportInitialize)data_clientes).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -263,7 +267,7 @@
         private Label label6;
         private Label label7;
         private Button btn_voltar;
-        private DataGridView dataGridView1;
+        private DataGridView data_clientes;
         private Button btn_deletar;
         private Button btn_editar;
     }
