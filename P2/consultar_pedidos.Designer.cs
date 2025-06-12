@@ -105,6 +105,7 @@
             btn_buscar.TabIndex = 7;
             btn_buscar.Text = "Buscar";
             btn_buscar.UseVisualStyleBackColor = true;
+            btn_buscar.Click += btn_buscar_Click;
             // 
             // consultar_pedidos
             // 
