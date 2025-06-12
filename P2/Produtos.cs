@@ -53,6 +53,7 @@ namespace P2
                     sw.WriteLine(linha);
                 }
                 MessageBox.Show("Produto criado", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                carregar_produtos();
                 text_nome.Clear();
                 text_preco.Clear();
                 text_descricao.Clear();
@@ -61,6 +62,42 @@ namespace P2
             {
                 MessageBox.Show("Não foi possivel salvar o produto");
             }
+        }
+
+        private void carregar_produtos()
+        {
+            if (!File.Exists(caminho_arquivo))
+                return;
+
+            DataTable tabela = new DataTable();
+            tabela.Columns.Add("Nome");
+            tabela.Columns.Add("Preço");
+            tabela.Columns.Add("Descrição");
+
+            try
+            {
+                string[] linha = File.ReadAllLines(caminho_arquivo);
+
+                for (int i = 1; i < linha.Length; i++)
+                {
+                    string[] dados = linha[i].Split(',');
+                    if (dados.Length == 3)
+                        tabela.Rows.Add(dados);
+
+
+                }
+                data_produto.DataSource = tabela;
+
+            }
+            catch
+            {
+                MessageBox.Show("Dados nao carregados");
+            }
+        }
+
+        private void Produtos_Load(object sender, EventArgs e)
+        {
+            carregar_produtos();
         }
     }
 }

@@ -155,6 +155,7 @@
             Controls.Add(text_nome);
             Name = "Produtos";
             Text = "Produtos";
+            Load += Produtos_Load;
             ((System.ComponentModel.ISupportInitialize)data_produto).EndInit();
             ResumeLayout(false);
             PerformLayout();

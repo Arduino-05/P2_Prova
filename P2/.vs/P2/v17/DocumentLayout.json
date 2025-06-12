@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\lardu\\source\\repos\\P2_Prova\\P2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{692866C3-46B8-EEFD-6220-BA4080180AAF}|P2.csproj|c:\\users\\lardu\\source\\repos\\p2_prova\\p2\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{692866C3-46B8-EEFD-6220-BA4080180AAF}|P2.csproj|solutionrelative:clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{692866C3-46B8-EEFD-6220-BA4080180AAF}|P2.csproj|c:\\users\\lardu\\source\\repos\\p2_prova\\p2\\produtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{692866C3-46B8-EEFD-6220-BA4080180AAF}|P2.csproj|solutionrelative:produtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{692866C3-46B8-EEFD-6220-BA4080180AAF}|P2.csproj|C:\\Users\\lardu\\source\\repos\\P2_Prova\\P2\\produtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{692866C3-46B8-EEFD-6220-BA4080180AAF}|P2.csproj|solutionrelative:produtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{692866C3-46B8-EEFD-6220-BA4080180AAF}|P2.csproj|c:\\users\\lardu\\source\\repos\\p2_prova\\p2\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{692866C3-46B8-EEFD-6220-BA4080180AAF}|P2.csproj|solutionrelative:clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{692866C3-46B8-EEFD-6220-BA4080180AAF}|P2.csproj|C:\\Users\\lardu\\source\\repos\\P2_Prova\\P2\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{692866C3-46B8-EEFD-6220-BA4080180AAF}|P2.csproj|solutionrelative:usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{692866C3-46B8-EEFD-6220-BA4080180AAF}|P2.csproj|c:\\users\\lardu\\source\\repos\\p2_prova\\p2\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{692866C3-46B8-EEFD-6220-BA4080180AAF}|P2.csproj|solutionrelative:clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{692866C3-46B8-EEFD-6220-BA4080180AAF}|P2.csproj|C:\\Users\\lardu\\source\\repos\\P2_Prova\\P2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -23,8 +27,8 @@
       "RelativeMoniker": "D:0:0:{692866C3-46B8-EEFD-6220-BA4080180AAF}|P2.csproj|solutionrelative:usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{692866C3-46B8-EEFD-6220-BA4080180AAF}|P2.csproj|C:\\Users\\lardu\\source\\repos\\P2_Prova\\P2\\produtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{692866C3-46B8-EEFD-6220-BA4080180AAF}|P2.csproj|solutionrelative:produtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{692866C3-46B8-EEFD-6220-BA4080180AAF}|P2.csproj|C:\\Users\\lardu\\source\\repos\\P2_Prova\\P2\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{692866C3-46B8-EEFD-6220-BA4080180AAF}|P2.csproj|solutionrelative:usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{692866C3-46B8-EEFD-6220-BA4080180AAF}|P2.csproj|C:\\Users\\lardu\\source\\repos\\P2_Prova\\P2\\pedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -35,16 +39,16 @@
       "RelativeMoniker": "D:0:0:{692866C3-46B8-EEFD-6220-BA4080180AAF}|P2.csproj|solutionrelative:consultar_pedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{692866C3-46B8-EEFD-6220-BA4080180AAF}|P2.csproj|C:\\Users\\lardu\\source\\repos\\P2_Prova\\P2\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{692866C3-46B8-EEFD-6220-BA4080180AAF}|P2.csproj|solutionrelative:menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{692866C3-46B8-EEFD-6220-BA4080180AAF}|P2.csproj|c:\\users\\lardu\\source\\repos\\p2_prova\\p2\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{692866C3-46B8-EEFD-6220-BA4080180AAF}|P2.csproj|solutionrelative:menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{692866C3-46B8-EEFD-6220-BA4080180AAF}|P2.csproj|c:\\users\\lardu\\source\\repos\\p2_prova\\p2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{692866C3-46B8-EEFD-6220-BA4080180AAF}|P2.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{692866C3-46B8-EEFD-6220-BA4080180AAF}|P2.csproj|C:\\Users\\lardu\\source\\repos\\P2_Prova\\P2\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{692866C3-46B8-EEFD-6220-BA4080180AAF}|P2.csproj|solutionrelative:menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,7 +62,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\lardu\\source\\repos\\P2_Prova\\P2\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
@@ -71,32 +75,47 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "Clientes.cs",
+              "DocumentMoniker": "C:\\Users\\lardu\\source\\repos\\P2_Prova\\P2\\Clientes.cs",
+              "RelativeDocumentMoniker": "Clientes.cs",
+              "ToolTip": "C:\\Users\\lardu\\source\\repos\\P2_Prova\\P2\\Clientes.cs",
+              "RelativeToolTip": "Clientes.cs",
+              "ViewState": "AgIAALoAAAAAAAAAAAAYwH0AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T02:06:56.731Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Produtos.cs",
+              "DocumentMoniker": "C:\\Users\\lardu\\source\\repos\\P2_Prova\\P2\\Produtos.cs",
+              "RelativeDocumentMoniker": "Produtos.cs",
+              "ToolTip": "C:\\Users\\lardu\\source\\repos\\P2_Prova\\P2\\Produtos.cs",
+              "RelativeToolTip": "Produtos.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAcwGMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T17:06:19.348Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Clientes.cs [Design]",
               "DocumentMoniker": "C:\\Users\\lardu\\source\\repos\\P2_Prova\\P2\\Clientes.cs",
               "RelativeDocumentMoniker": "Clientes.cs",
-              "ToolTip": "C:\\Users\\lardu\\source\\repos\\P2_Prova\\P2\\Clientes.cs [Design]*",
-              "RelativeToolTip": "Clientes.cs [Design]*",
+              "ToolTip": "C:\\Users\\lardu\\source\\repos\\P2_Prova\\P2\\Clientes.cs [Design]",
+              "RelativeToolTip": "Clientes.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-12T17:02:47.647Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Clientes.cs",
-              "DocumentMoniker": "C:\\Users\\lardu\\source\\repos\\P2_Prova\\P2\\Clientes.cs",
-              "RelativeDocumentMoniker": "Clientes.cs",
-              "ToolTip": "C:\\Users\\lardu\\source\\repos\\P2_Prova\\P2\\Clientes.cs*",
-              "RelativeToolTip": "Clientes.cs*",
-              "ViewState": "AgIAAG4AAAAAAAAAAAAUwHUAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T02:06:56.731Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "menu.cs",
               "DocumentMoniker": "C:\\Users\\lardu\\source\\repos\\P2_Prova\\P2\\menu.cs",
               "RelativeDocumentMoniker": "menu.cs",
@@ -109,53 +128,56 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "consultar_pedidos.cs [Design]",
               "DocumentMoniker": "C:\\Users\\lardu\\source\\repos\\P2_Prova\\P2\\consultar_pedidos.cs",
               "RelativeDocumentMoniker": "consultar_pedidos.cs",
               "ToolTip": "C:\\Users\\lardu\\source\\repos\\P2_Prova\\P2\\consultar_pedidos.cs [Design]",
               "RelativeToolTip": "consultar_pedidos.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T19:20:20.317Z"
+              "WhenOpened": "2025-06-11T19:20:20.317Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "pedidos.cs [Design]",
               "DocumentMoniker": "C:\\Users\\lardu\\source\\repos\\P2_Prova\\P2\\pedidos.cs",
               "RelativeDocumentMoniker": "pedidos.cs",
               "ToolTip": "C:\\Users\\lardu\\source\\repos\\P2_Prova\\P2\\pedidos.cs [Design]",
               "RelativeToolTip": "pedidos.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T19:05:05.762Z"
+              "WhenOpened": "2025-06-11T19:05:05.762Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "Produtos.cs [Design]",
               "DocumentMoniker": "C:\\Users\\lardu\\source\\repos\\P2_Prova\\P2\\Produtos.cs",
               "RelativeDocumentMoniker": "Produtos.cs",
               "ToolTip": "C:\\Users\\lardu\\source\\repos\\P2_Prova\\P2\\Produtos.cs [Design]",
               "RelativeToolTip": "Produtos.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T18:08:06.378Z"
+              "WhenOpened": "2025-06-11T18:08:06.378Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "usuario.cs",
               "DocumentMoniker": "C:\\Users\\lardu\\source\\repos\\P2_Prova\\P2\\usuario.cs",
               "RelativeDocumentMoniker": "usuario.cs",
               "ToolTip": "C:\\Users\\lardu\\source\\repos\\P2_Prova\\P2\\usuario.cs",
               "RelativeToolTip": "usuario.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-11T18:03:40.124Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "usuario.cs [Design]",
               "DocumentMoniker": "C:\\Users\\lardu\\source\\repos\\P2_Prova\\P2\\usuario.cs",
               "RelativeDocumentMoniker": "usuario.cs",
@@ -167,18 +189,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "menu.cs [Design]",
               "DocumentMoniker": "C:\\Users\\lardu\\source\\repos\\P2_Prova\\P2\\menu.cs",
               "RelativeDocumentMoniker": "menu.cs",
               "ToolTip": "C:\\Users\\lardu\\source\\repos\\P2_Prova\\P2\\menu.cs [Design]",
               "RelativeToolTip": "menu.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T13:44:26.846Z"
+              "WhenOpened": "2025-06-08T13:44:26.846Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\lardu\\source\\repos\\P2_Prova\\P2\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
