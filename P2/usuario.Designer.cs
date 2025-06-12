@@ -37,6 +37,7 @@
             text_senha = new TextBox();
             label2 = new Label();
             label3 = new Label();
+            btn_voltar = new Button();
             ((System.ComponentModel.ISupportInitialize)data_usuarios).BeginInit();
             SuspendLayout();
             // 
@@ -127,12 +128,24 @@
             label3.TabIndex = 8;
             label3.Text = "Senha";
             // 
+            // btn_voltar
+            // 
+            btn_voltar.BackColor = SystemColors.ActiveCaptionText;
+            btn_voltar.ForeColor = SystemColors.ControlLight;
+            btn_voltar.Location = new Point(309, 12);
+            btn_voltar.Name = "btn_voltar";
+            btn_voltar.Size = new Size(75, 23);
+            btn_voltar.TabIndex = 9;
+            btn_voltar.Text = "Voltar";
+            btn_voltar.UseVisualStyleBackColor = false;
+            // 
             // usuario
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(396, 450);
+            Controls.Add(btn_voltar);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(text_senha);
@@ -161,5 +174,6 @@
         private TextBox text_senha;
         private Label label2;
         private Label label3;
+        private Button btn_voltar;
     }
 }

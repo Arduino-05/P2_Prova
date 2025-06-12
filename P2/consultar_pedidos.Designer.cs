@@ -36,6 +36,7 @@
             label_total = new Label();
             label3 = new Label();
             btn_buscar = new Button();
+            btn_voltar = new Button();
             SuspendLayout();
             // 
             // text_cpf
@@ -110,12 +111,25 @@
             btn_buscar.UseVisualStyleBackColor = false;
             btn_buscar.Click += btn_buscar_Click;
             // 
+            // btn_voltar
+            // 
+            btn_voltar.BackColor = SystemColors.ActiveCaptionText;
+            btn_voltar.ForeColor = SystemColors.ControlLight;
+            btn_voltar.Location = new Point(585, 15);
+            btn_voltar.Name = "btn_voltar";
+            btn_voltar.Size = new Size(75, 23);
+            btn_voltar.TabIndex = 8;
+            btn_voltar.Text = "Voltar";
+            btn_voltar.UseVisualStyleBackColor = false;
+            btn_voltar.Click += btn_voltar_Click;
+            // 
             // consultar_pedidos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(688, 450);
+            Controls.Add(btn_voltar);
             Controls.Add(btn_buscar);
             Controls.Add(label3);
             Controls.Add(label_total);
@@ -141,5 +155,6 @@
         private Label label_total;
         private Label label3;
         private Button btn_buscar;
+        private Button btn_voltar;
     }
 }

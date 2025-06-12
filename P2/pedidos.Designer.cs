@@ -45,6 +45,7 @@
             label6 = new Label();
             btn_buscar = new Button();
             list_itens = new ListBox();
+            btn_voltar = new Button();
             ((System.ComponentModel.ISupportInitialize)bindingSource1).BeginInit();
             SuspendLayout();
             // 
@@ -185,12 +186,25 @@
             list_itens.Size = new Size(304, 94);
             list_itens.TabIndex = 15;
             // 
+            // btn_voltar
+            // 
+            btn_voltar.BackColor = SystemColors.ActiveCaptionText;
+            btn_voltar.ForeColor = SystemColors.ControlLight;
+            btn_voltar.Location = new Point(713, 12);
+            btn_voltar.Name = "btn_voltar";
+            btn_voltar.Size = new Size(75, 23);
+            btn_voltar.TabIndex = 16;
+            btn_voltar.Text = "Voltar";
+            btn_voltar.UseVisualStyleBackColor = false;
+            btn_voltar.Click += btn_voltar_Click;
+            // 
             // pedidos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(800, 450);
+            Controls.Add(btn_voltar);
             Controls.Add(list_itens);
             Controls.Add(btn_buscar);
             Controls.Add(label6);
@@ -232,5 +246,6 @@
         private Label label6;
         private Button btn_buscar;
         private ListBox list_itens;
+        private Button btn_voltar;
     }
 }

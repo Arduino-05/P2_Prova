@@ -40,6 +40,7 @@
             btn_editar = new Button();
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             data_produto = new DataGridView();
+            btn_voltar = new Button();
             ((System.ComponentModel.ISupportInitialize)data_produto).BeginInit();
             SuspendLayout();
             // 
@@ -146,12 +147,25 @@
             data_produto.TabIndex = 8;
             data_produto.CellClick += data_produto_CellClick;
             // 
+            // btn_voltar
+            // 
+            btn_voltar.BackColor = SystemColors.ActiveCaptionText;
+            btn_voltar.ForeColor = Color.White;
+            btn_voltar.Location = new Point(663, 12);
+            btn_voltar.Name = "btn_voltar";
+            btn_voltar.Size = new Size(75, 23);
+            btn_voltar.TabIndex = 11;
+            btn_voltar.Text = "Voltar";
+            btn_voltar.UseVisualStyleBackColor = false;
+            btn_voltar.Click += btn_voltar_Click;
+            // 
             // Produtos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(750, 450);
+            Controls.Add(btn_voltar);
             Controls.Add(btn_editar);
             Controls.Add(btn_deletar);
             Controls.Add(data_produto);
@@ -186,5 +200,6 @@
         private Button btn_editar;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private DataGridView data_produto;
+        private Button btn_voltar;
     }
 }
