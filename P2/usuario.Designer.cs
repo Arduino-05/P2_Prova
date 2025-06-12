@@ -134,6 +134,7 @@
             Controls.Add(data_usuarios);
             Name = "usuario";
             Text = "usuario";
+            Load += usuario_Load;
             ((System.ComponentModel.ISupportInitialize)data_usuarios).EndInit();
             ResumeLayout(false);
             PerformLayout();

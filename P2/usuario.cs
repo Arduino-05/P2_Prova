@@ -51,6 +51,7 @@ namespace P2
                 }
 
                 MessageBox.Show("Usuario Cadastrado");
+                carregar_usuarios();
                 text_email.Clear();
                 text_senha.Clear();
             }
@@ -58,6 +59,39 @@ namespace P2
             {
                 MessageBox.Show("Erro ao Cadastrar");
             }
+        }
+
+        private void carregar_usuarios()
+        {
+            if (!File.Exists(caminho_arquivo))
+                return;
+
+            DataTable tabela = new DataTable();
+            tabela.Columns.Add("Email");
+            tabela.Columns.Add("Senha");
+
+            try
+            {
+                string[] linhas = File.ReadAllLines(caminho_arquivo);
+
+                for (int i = 1; i < linhas.Length; i++)
+                {
+                    string[] dados = linhas[i].Split(';');
+                    if (dados.Length == 2)
+                        tabela.Rows.Add(dados);
+                }
+
+                data_usuarios.DataSource = tabela;
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Não foi possivel carregar usuarios");
+            }
+        }
+
+        private void usuario_Load(object sender, EventArgs e)
+        {
+            carregar_usuarios();
         }
     }
 
