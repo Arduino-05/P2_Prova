@@ -43,13 +43,14 @@ namespace P2
         private void pedidos_Load(object sender, EventArgs e)
         {
             var produtos = File.ReadAllLines(caminho_produtos);
-            foreach (var linha in produtos)
+            for (int i = 1; i < produtos.Length; i++)
             {
+                var linha = produtos[i];
                 var dados = linha.Contains(';') ? linha.Split(';') : linha.Split(',');
 
                 if (dados.Length >= 3)
                 {
-                    select_produtos.Items.Add($"{dados[0]} - {dados[1]} - R${dados[2]}");
+                    select_produtos.Items.Add($"{dados[0]} - R${dados[1]} - {dados[2]}");
                 }
             }
         }
@@ -64,12 +65,35 @@ namespace P2
                 var dados = linha.Split(';');
                 if (dados[1] == cpf)
                 {
-                    text_nome.Text = dados[0]; 
+                    text_nome.Text = dados[0];
                     return;
                 }
             }
 
             MessageBox.Show("Cliente não encontrado!");
+        }
+
+        List<string> itensPedido = new();
+        double totalPedido = 0;
+
+        private void btn_add_Click(object sender, EventArgs e)
+        {
+            if (select_produtos.SelectedItem == null) return;
+
+            var info = select_produtos.SelectedItem.ToString().Split(" - ");
+            string nome = info[0];
+            double preco = double.Parse(info[1].Replace("R$", ""));
+            string descricao = info[2];
+
+            int qtd = int.Parse(text_qtde.Text);
+            double totalItem = qtd * preco;
+
+            string itemFormatado = $"{nome};{preco};{descricao};{qtd};{totalItem}";
+            itensPedido.Add(itemFormatado);
+
+            list_itens.Items.Add($"{nome} x{qtd} - R${totalItem}");
+            totalPedido += totalItem;
+            label_total.Text = $"Total: R${totalPedido}";
         }
     }
 }

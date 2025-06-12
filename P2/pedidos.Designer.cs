@@ -36,17 +36,16 @@
             bindingSource1 = new BindingSource(components);
             select_produtos = new ComboBox();
             label4 = new Label();
-            data_itens = new DataGridView();
             btn_add = new Button();
             btn_finalizar = new Button();
-            textBox1 = new TextBox();
+            text_qtde = new TextBox();
             label3 = new Label();
             label5 = new Label();
             label_total = new Label();
             label6 = new Label();
             btn_buscar = new Button();
+            list_itens = new ListBox();
             ((System.ComponentModel.ISupportInitialize)bindingSource1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)data_itens).BeginInit();
             SuspendLayout();
             // 
             // text_cpf
@@ -98,15 +97,6 @@
             label4.TabIndex = 5;
             label4.Text = "Produto";
             // 
-            // data_itens
-            // 
-            data_itens.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            data_itens.Location = new Point(396, 150);
-            data_itens.Name = "data_itens";
-            data_itens.RowTemplate.Height = 25;
-            data_itens.Size = new Size(304, 150);
-            data_itens.TabIndex = 6;
-            // 
             // btn_add
             // 
             btn_add.Location = new Point(625, 121);
@@ -115,6 +105,7 @@
             btn_add.TabIndex = 7;
             btn_add.Text = "Adicionar";
             btn_add.UseVisualStyleBackColor = true;
+            btn_add.Click += btn_add_Click;
             // 
             // btn_finalizar
             // 
@@ -125,12 +116,12 @@
             btn_finalizar.Text = "Finalizar";
             btn_finalizar.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // text_qtde
             // 
-            textBox1.Location = new Point(557, 83);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(143, 23);
-            textBox1.TabIndex = 9;
+            text_qtde.Location = new Point(557, 83);
+            text_qtde.Name = "text_qtde";
+            text_qtde.Size = new Size(143, 23);
+            text_qtde.TabIndex = 9;
             // 
             // label3
             // 
@@ -178,20 +169,29 @@
             btn_buscar.UseVisualStyleBackColor = true;
             btn_buscar.Click += btn_buscar_Click;
             // 
+            // list_itens
+            // 
+            list_itens.FormattingEnabled = true;
+            list_itens.ItemHeight = 15;
+            list_itens.Location = new Point(396, 150);
+            list_itens.Name = "list_itens";
+            list_itens.Size = new Size(304, 94);
+            list_itens.TabIndex = 15;
+            // 
             // pedidos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(list_itens);
             Controls.Add(btn_buscar);
             Controls.Add(label6);
             Controls.Add(label_total);
             Controls.Add(label5);
             Controls.Add(label3);
-            Controls.Add(textBox1);
+            Controls.Add(text_qtde);
             Controls.Add(btn_finalizar);
             Controls.Add(btn_add);
-            Controls.Add(data_itens);
             Controls.Add(label4);
             Controls.Add(select_produtos);
             Controls.Add(label2);
@@ -202,7 +202,6 @@
             Text = "pedidos";
             Load += pedidos_Load;
             ((System.ComponentModel.ISupportInitialize)bindingSource1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)data_itens).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -216,14 +215,14 @@
         private BindingSource bindingSource1;
         private ComboBox select_produtos;
         private Label label4;
-        private DataGridView data_itens;
         private Button btn_add;
         private Button btn_finalizar;
-        private TextBox textBox1;
+        private TextBox text_qtde;
         private Label label3;
         private Label label5;
         private Label label_total;
         private Label label6;
         private Button btn_buscar;
+        private ListBox list_itens;
     }
 }

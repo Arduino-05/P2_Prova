@@ -36,10 +36,10 @@
             label3 = new Label();
             label4 = new Label();
             btn_salvar = new Button();
-            data_produto = new DataGridView();
             btn_deletar = new Button();
             btn_editar = new Button();
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            data_produto = new DataGridView();
             ((System.ComponentModel.ISupportInitialize)data_produto).BeginInit();
             SuspendLayout();
             // 
@@ -110,16 +110,6 @@
             btn_salvar.UseVisualStyleBackColor = true;
             btn_salvar.Click += btn_salvar_Click;
             // 
-            // data_produto
-            // 
-            data_produto.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            data_produto.Location = new Point(432, 102);
-            data_produto.Name = "data_produto";
-            data_produto.RowTemplate.Height = 25;
-            data_produto.Size = new Size(290, 150);
-            data_produto.TabIndex = 8;
-            data_produto.CellClick += data_produto_CellClick;
-            // 
             // btn_deletar
             // 
             btn_deletar.Location = new Point(647, 73);
@@ -139,6 +129,16 @@
             btn_editar.Text = "Editar";
             btn_editar.UseVisualStyleBackColor = true;
             btn_editar.Click += btn_editar_Click;
+            // 
+            // data_produto
+            // 
+            data_produto.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            data_produto.Location = new Point(432, 102);
+            data_produto.Name = "data_produto";
+            data_produto.RowTemplate.Height = 25;
+            data_produto.Size = new Size(290, 150);
+            data_produto.TabIndex = 8;
+            data_produto.CellClick += data_produto_CellClick;
             // 
             // Produtos
             // 
@@ -174,9 +174,9 @@
         private Label label3;
         private Label label4;
         private Button btn_salvar;
-        private DataGridView data_produto;
         private Button btn_deletar;
         private Button btn_editar;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private DataGridView data_produto;
     }
 }
