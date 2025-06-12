@@ -44,6 +44,13 @@ namespace P2
             return;
         }
 
-
+        private void btn_usuario_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            usuario usuarios = new usuario();
+            usuarios.ShowDialog();
+            this.Close();
+            return;
+        }
     }
 }
