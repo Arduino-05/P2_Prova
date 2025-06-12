@@ -20,7 +20,7 @@ namespace P2
 
         private string caminho_produtos = "c:/Users/lardu/Documents/produtos.csv";
         private string caminho_clientes = "c:/Users/lardu/Documents/clientes.csv";
-
+        private string caminho_pedidos = "c:/Users/lardu/Documents/pedidos.csv";
 
         private void iniciar_arquivos()
         {
@@ -36,6 +36,13 @@ namespace P2
                 using (StreamWriter aq_c = new StreamWriter(caminho_clientes))
                 {
                     aq_c.WriteLine("Nome;CPF;Email;Endereco;Telefone;Zap");
+                }
+            }
+            else if (!File.Exists(caminho_pedidos))
+            {
+                using (StreamWriter aq_c = new StreamWriter(caminho_pedidos))
+                {
+                    aq_c.WriteLine("CPF;Itens,Total");
                 }
             }
         }
@@ -94,6 +101,59 @@ namespace P2
             list_itens.Items.Add($"{nome} x{qtd} - R${totalItem}");
             totalPedido += totalItem;
             label_total.Text = $"Total: R${totalPedido}";
+        }
+
+        private void btn_finalizar_Click(object sender, EventArgs e)
+        {
+            string cpf = text_cpf.Text.Trim();
+
+            if (string.IsNullOrEmpty(cpf))
+            {
+                MessageBox.Show("Tem que ter CPF.");
+                return;
+            }
+
+            if (itensPedido.Count == 0)
+            {
+                MessageBox.Show("Coloque itens.");
+                return;
+            }
+
+            var itensFormatados = itensPedido.Select(item =>
+            {
+                var partes = item.Split(';');
+                string nome = partes[0];
+                double preco = double.Parse(partes[1]);
+                int qtd = int.Parse(partes[3]);
+                return $"{nome} x{qtd} R${preco:F2}";
+            });
+
+            string itensString = string.Join("|", itensFormatados);
+
+            string linha = $"{cpf};\"{itensString}\";{totalPedido:F2}";
+
+            try
+            {
+                using (StreamWriter sw = new StreamWriter(caminho_pedidos, true))
+                {
+                    sw.WriteLine(linha);
+                }
+
+                MessageBox.Show("Pedido salvo sucesso!");
+
+                text_cpf.Clear();
+                text_nome.Clear();
+                text_qtde.Clear();
+                select_produtos.SelectedIndex = -1;
+                list_itens.Items.Clear();
+                itensPedido.Clear();
+                totalPedido = 0;
+                label_total.Text = "Total: R$0,00";
+            }
+            catch (Exception)
+            {
+                MessageBox.Show($"Pedido cancelado");
+            }
         }
     }
 }

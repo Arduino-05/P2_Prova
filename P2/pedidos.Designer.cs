@@ -115,6 +115,7 @@
             btn_finalizar.TabIndex = 8;
             btn_finalizar.Text = "Finalizar";
             btn_finalizar.UseVisualStyleBackColor = true;
+            btn_finalizar.Click += btn_finalizar_Click;
             // 
             // text_qtde
             // 
