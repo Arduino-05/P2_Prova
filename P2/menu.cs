@@ -52,5 +52,14 @@ namespace P2
             this.Close();
             return;
         }
+
+        private void btn_consultar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            consultar_pedidos conusulta = new consultar_pedidos();
+            conusulta.ShowDialog();
+            this.Close();
+            return;
+        }
     }
 }

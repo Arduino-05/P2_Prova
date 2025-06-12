@@ -100,6 +100,7 @@
             btn_consultar.TabIndex = 5;
             btn_consultar.Text = "CONSULTAR";
             btn_consultar.UseVisualStyleBackColor = false;
+            btn_consultar.Click += btn_consultar_Click;
             // 
             // menu
             // 
