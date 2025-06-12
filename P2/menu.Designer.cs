@@ -55,6 +55,7 @@
             btn_produto.TabIndex = 1;
             btn_produto.Text = "PRODUTOS";
             btn_produto.UseVisualStyleBackColor = false;
+            btn_produto.Click += btn_produto_Click;
             // 
             // btn_pedido
             // 
@@ -65,6 +66,7 @@
             btn_pedido.TabIndex = 2;
             btn_pedido.Text = "PEDIDOS";
             btn_pedido.UseVisualStyleBackColor = false;
+            btn_pedido.Click += btn_pedido_Click;
             // 
             // btn_usuario
             // 
@@ -75,6 +77,7 @@
             btn_usuario.TabIndex = 3;
             btn_usuario.Text = "USUARIOS";
             btn_usuario.UseVisualStyleBackColor = false;
+            btn_usuario.Click += btn_usuario_Click;
             // 
             // label1
             // 

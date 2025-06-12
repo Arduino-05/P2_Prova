@@ -20,10 +20,21 @@ namespace P2
         private void btn_clientes_Click(object sender, EventArgs e)
         {
             this.Hide();
-            menu cliente = new menu();
+            Clientes cliente = new Clientes();
             cliente.ShowDialog();
             this.Close();
             return;
         }
+
+        private void btn_produto_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Produtos produtos = new Produtos();
+            produtos.ShowDialog();
+            this.Close();
+            return;
+        }
+
+
     }
 }
