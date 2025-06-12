@@ -16,6 +16,23 @@ namespace P2
         {
             InitializeComponent();
         }
+
+        private string caminho_arquivo = "c:/Users/lardu/Documents/usuario.csv";
+
+        private void iniciar_arquivo()
+        {
+            if (!File.Exists(caminho_arquivo))
+            {
+                using (StreamWriter aq = new StreamWriter(caminho_arquivo))
+                {
+                    aq.WriteLine("Login,Senha");
+                }
+            }
+        }
+        private void btn_salvar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
 

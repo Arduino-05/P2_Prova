@@ -75,6 +75,7 @@
             btn_salvar.TabIndex = 3;
             btn_salvar.Text = "Salvar";
             btn_salvar.UseVisualStyleBackColor = true;
+            btn_salvar.Click += btn_salvar_Click;
             // 
             // text_email
             // 
