@@ -142,7 +142,15 @@ namespace P2
 
         private void btn_deletar_Click(object sender, EventArgs e)
         {
-
+            if (data_clientes.CurrentRow == null) return;
+            int index = data_clientes.CurrentRow.Index;
+            List<string> linhas = File.ReadAllLines(caminho_arquivo).ToList();
+            if (index + 1 >= linhas.Count) return; 
+            linhas.RemoveAt(index + 1); 
+            File.WriteAllLines(caminho_arquivo, linhas);
+            MessageBox.Show("Cliente deletado com sucesso!");
+            carregar_clientes();
+        
         }
 
         private void data_clientes_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -150,7 +158,6 @@ namespace P2
             if (e.RowIndex >= 0)
             {
                 DataGridViewRow row = data_clientes.Rows[e.RowIndex];
-
                 text_nome.Text = row.Cells[0].Value?.ToString();
                 text_cpf.Text = row.Cells[1].Value?.ToString();
                 text_email.Text = row.Cells[2].Value?.ToString();
