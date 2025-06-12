@@ -126,5 +126,20 @@ namespace P2
             text_preco.Clear();
             text_descricao.Clear();
         }
+
+        private void btn_deletar_Click(object sender, EventArgs e)
+        {
+            if (data_produto.CurrentRow == null) return;
+            int index = data_produto.CurrentRow.Index;
+            List<string> linhas = File.ReadAllLines(caminho_arquivo).ToList();
+            if (index + 1 >= linhas.Count) return;
+            linhas.RemoveAt(index + 1);
+            File.WriteAllLines(caminho_arquivo, linhas);
+            MessageBox.Show("Produto deletado com sucesso!");
+            carregar_produtos();
+            text_nome.Clear();
+            text_preco.Clear();
+            text_descricao.Clear();
+        }
     }
 }
