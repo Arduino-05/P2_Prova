@@ -42,6 +42,7 @@
             label5 = new Label();
             label6 = new Label();
             label7 = new Label();
+            btn_voltar = new Button();
             SuspendLayout();
             // 
             // btn_cadastrar
@@ -167,12 +168,24 @@
             label7.TabIndex = 17;
             label7.Text = "WhatsApp";
             // 
+            // btn_voltar
+            // 
+            btn_voltar.BackColor = SystemColors.ControlText;
+            btn_voltar.Location = new Point(250, 12);
+            btn_voltar.Name = "btn_voltar";
+            btn_voltar.Size = new Size(104, 28);
+            btn_voltar.TabIndex = 18;
+            btn_voltar.Text = "Voltar";
+            btn_voltar.UseVisualStyleBackColor = false;
+            btn_voltar.Click += btn_voltar_Click;
+            // 
             // Clientes
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(356, 450);
+            Controls.Add(btn_voltar);
             Controls.Add(label7);
             Controls.Add(label6);
             Controls.Add(label5);
@@ -210,5 +223,6 @@
         private Label label5;
         private Label label6;
         private Label label7;
+        private Button btn_voltar;
     }
 }

@@ -16,5 +16,14 @@ namespace P2
         {
             InitializeComponent();
         }
+
+        private void btn_voltar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            menu voltar = new menu();
+            voltar.ShowDialog();
+            this.Close();
+            return;
+        }
     }
 }
