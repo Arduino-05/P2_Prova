@@ -31,7 +31,33 @@ namespace P2
         }
         private void btn_salvar_Click(object sender, EventArgs e)
         {
+            string email = text_email.Text.Trim();
+            string senha = text_senha.Text.Trim();
 
+            if (string.IsNullOrEmpty(email) ||
+                string.IsNullOrEmpty(senha))
+            {
+                MessageBox.Show("Esta faltando dados");
+                return;
+            }
+
+            string linha = $"{email};{senha}";
+
+            try
+            {
+                using (StreamWriter sw = new StreamWriter(caminho_arquivo, true))
+                {
+                    sw.WriteLine(linha);
+                }
+
+                MessageBox.Show("Usuario Cadastrado");
+                text_email.Clear();
+                text_senha.Clear();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Erro ao Cadastrar");
+            }
         }
     }
 
