@@ -137,7 +137,15 @@ namespace P2
 
         private void btn_editar_Click(object sender, EventArgs e)
         {
-
+            if (data_clientes.CurrentRow == null) return;
+            int index = data_clientes.CurrentRow.Index;
+            string[] linhas = File.ReadAllLines(caminho_arquivo).ToArray();
+            if (index + 1 >= linhas.Length) return; 
+            string novaLinha = $"{text_nome.Text};{text_cpf.Text};{text_email.Text};{text_cep.Text};{text_tele.Text};{text_zap.Text}";
+            linhas[index + 1] = novaLinha;
+            File.WriteAllLines(caminho_arquivo, linhas);
+            MessageBox.Show("Cliente editado com sucesso!");
+            carregar_clientes();
         }
 
         private void btn_deletar_Click(object sender, EventArgs e)
