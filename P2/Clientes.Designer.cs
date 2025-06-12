@@ -84,6 +84,7 @@
             text_cpf.Name = "text_cpf";
             text_cpf.Size = new Size(223, 23);
             text_cpf.TabIndex = 7;
+            text_cpf.Leave += text_cep_Leave;
             // 
             // text_email
             // 

@@ -87,9 +87,16 @@ namespace P2
 
 
 
+
+
         private void btn_cadastrar_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void text_cep_Leave(object sender, EventArgs e)
+        {
+            buscar_end();
         }
     }
 }
