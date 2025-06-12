@@ -193,7 +193,7 @@
             data_clientes.RowTemplate.Height = 25;
             data_clientes.Size = new Size(272, 150);
             data_clientes.TabIndex = 19;
-            data_clientes.CellContentClick += data_clientes_CellContentClick;
+            data_clientes.CellClick += data_clientes_CellClick;
             // 
             // btn_deletar
             // 

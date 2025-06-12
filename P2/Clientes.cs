@@ -115,7 +115,7 @@ namespace P2
                 }
 
                 MessageBox.Show("Cliente cadastrado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                carregar_clientes();
                 text_nome.Clear();
                 text_email.Clear();
                 text_cpf.Clear();
@@ -140,12 +140,18 @@ namespace P2
             if (data_clientes.CurrentRow == null) return;
             int index = data_clientes.CurrentRow.Index;
             string[] linhas = File.ReadAllLines(caminho_arquivo).ToArray();
-            if (index + 1 >= linhas.Length) return; 
+            if (index + 1 >= linhas.Length) return;
             string novaLinha = $"{text_nome.Text};{text_cpf.Text};{text_email.Text};{text_cep.Text};{text_tele.Text};{text_zap.Text}";
             linhas[index + 1] = novaLinha;
             File.WriteAllLines(caminho_arquivo, linhas);
             MessageBox.Show("Cliente editado com sucesso!");
             carregar_clientes();
+            text_nome.Clear();
+            text_email.Clear();
+            text_cpf.Clear();
+            text_zap.Clear();
+            text_tele.Clear();
+            text_cep.Clear();
         }
 
         private void btn_deletar_Click(object sender, EventArgs e)
@@ -153,26 +159,18 @@ namespace P2
             if (data_clientes.CurrentRow == null) return;
             int index = data_clientes.CurrentRow.Index;
             List<string> linhas = File.ReadAllLines(caminho_arquivo).ToList();
-            if (index + 1 >= linhas.Count) return; 
-            linhas.RemoveAt(index + 1); 
+            if (index + 1 >= linhas.Count) return;
+            linhas.RemoveAt(index + 1);
             File.WriteAllLines(caminho_arquivo, linhas);
             MessageBox.Show("Cliente deletado com sucesso!");
             carregar_clientes();
-        
-        }
+            text_nome.Clear();
+            text_email.Clear();
+            text_cpf.Clear();
+            text_zap.Clear();
+            text_tele.Clear();
+            text_cep.Clear();
 
-        private void data_clientes_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex >= 0)
-            {
-                DataGridViewRow row = data_clientes.Rows[e.RowIndex];
-                text_nome.Text = row.Cells[0].Value?.ToString();
-                text_cpf.Text = row.Cells[1].Value?.ToString();
-                text_email.Text = row.Cells[2].Value?.ToString();
-                text_cep.Text = row.Cells[3].Value?.ToString();
-                text_tele.Text = row.Cells[4].Value?.ToString();
-                text_zap.Text = row.Cells[5].Value?.ToString();
-            }
         }
 
         private void carregar_clientes()
@@ -212,6 +210,20 @@ namespace P2
         {
             carregar_clientes();
 
+        }
+
+        private void data_clientes_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = data_clientes.Rows[e.RowIndex];
+                text_nome.Text = row.Cells[0].Value?.ToString();
+                text_cpf.Text = row.Cells[1].Value?.ToString();
+                text_email.Text = row.Cells[2].Value?.ToString();
+                text_cep.Text = row.Cells[3].Value?.ToString();
+                text_tele.Text = row.Cells[4].Value?.ToString();
+                text_zap.Text = row.Cells[5].Value?.ToString();
+            }
         }
     }
 }
