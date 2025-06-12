@@ -48,6 +48,7 @@
             data_usuarios.RowTemplate.Height = 25;
             data_usuarios.Size = new Size(324, 150);
             data_usuarios.TabIndex = 0;
+            data_usuarios.CellClick += data_usuarios_CellClick;
             // 
             // btn_deletar
             // 
@@ -66,6 +67,7 @@
             btn_editar.TabIndex = 2;
             btn_editar.Text = "Editar";
             btn_editar.UseVisualStyleBackColor = true;
+            btn_editar.Click += btn_editar_Click;
             // 
             // btn_salvar
             // 

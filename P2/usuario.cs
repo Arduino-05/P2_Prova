@@ -93,6 +93,20 @@ namespace P2
         {
             carregar_usuarios();
         }
+
+        private void data_usuarios_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = data_usuarios.Rows[e.RowIndex];
+                text_email.Text = row.Cells[0].Value?.ToString();
+                text_senha.Text = row.Cells[1].Value?.ToString();
+            }
+        }
+
+
+
+
     }
 
 
