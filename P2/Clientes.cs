@@ -40,6 +40,36 @@ namespace P2
             return;
         }
 
+        private async void buscar_end()
+        {
+            string cep = text_cep.Text.Trim().Replace("-", "");
+
+            if (cep.Length != 8)
+            {
+                MessageBox.Show("CEP inválido.");
+                return;
+            }
+
+            try
+            {
+                using (HttpClient client = new HttpClient())
+                {
+                    string url = $"https://viacep.com.br/ws/{cep}/json/";
+                    string json = await client.GetStringAsync(url);
+
+                    var endereco = JsonConvert.DeserializeObject<ViaCepResponse>(json);
+
+                    text_cep.Text = $"{endereco.cep} - {endereco.logradouro}, {endereco.bairro}, {endereco.localidade}-{endereco.uf}";
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao buscar CEP: " + ex.Message);
+            }
+        }
+
+        
+
         private void btn_cadastrar_Click(object sender, EventArgs e)
         {
 

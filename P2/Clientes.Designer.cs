@@ -33,7 +33,7 @@
             text_nome = new TextBox();
             text_cpf = new TextBox();
             text_email = new TextBox();
-            text_end = new TextBox();
+            text_cep = new TextBox();
             text_tele = new TextBox();
             text_zap = new TextBox();
             label2 = new Label();
@@ -43,6 +43,10 @@
             label6 = new Label();
             label7 = new Label();
             btn_voltar = new Button();
+            dataGridView1 = new DataGridView();
+            btn_deletar = new Button();
+            btn_editar = new Button();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // btn_cadastrar
@@ -63,9 +67,9 @@
             label1.ForeColor = SystemColors.ActiveCaptionText;
             label1.Location = new Point(99, 23);
             label1.Name = "label1";
-            label1.Size = new Size(128, 37);
+            label1.Size = new Size(119, 37);
             label1.TabIndex = 5;
-            label1.Text = "Usuários";
+            label1.Text = "Clientes";
             // 
             // text_nome
             // 
@@ -88,12 +92,12 @@
             text_email.Size = new Size(223, 23);
             text_email.TabIndex = 8;
             // 
-            // text_end
+            // text_cep
             // 
-            text_end.Location = new Point(62, 220);
-            text_end.Name = "text_end";
-            text_end.Size = new Size(223, 23);
-            text_end.TabIndex = 9;
+            text_cep.Location = new Point(62, 220);
+            text_cep.Name = "text_cep";
+            text_cep.Size = new Size(223, 23);
+            text_cep.TabIndex = 9;
             // 
             // text_tele
             // 
@@ -172,7 +176,7 @@
             // btn_voltar
             // 
             btn_voltar.BackColor = SystemColors.ControlText;
-            btn_voltar.Location = new Point(250, 12);
+            btn_voltar.Location = new Point(522, 12);
             btn_voltar.Name = "btn_voltar";
             btn_voltar.Size = new Size(104, 28);
             btn_voltar.TabIndex = 18;
@@ -180,12 +184,44 @@
             btn_voltar.UseVisualStyleBackColor = false;
             btn_voltar.Click += btn_voltar_Click;
             // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(325, 183);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowTemplate.Height = 25;
+            dataGridView1.Size = new Size(272, 150);
+            dataGridView1.TabIndex = 19;
+            // 
+            // btn_deletar
+            // 
+            btn_deletar.BackColor = SystemColors.ControlText;
+            btn_deletar.Location = new Point(493, 149);
+            btn_deletar.Name = "btn_deletar";
+            btn_deletar.Size = new Size(104, 28);
+            btn_deletar.TabIndex = 20;
+            btn_deletar.Text = "Deletar";
+            btn_deletar.UseVisualStyleBackColor = false;
+            // 
+            // btn_editar
+            // 
+            btn_editar.BackColor = SystemColors.ControlText;
+            btn_editar.Location = new Point(383, 149);
+            btn_editar.Name = "btn_editar";
+            btn_editar.Size = new Size(104, 28);
+            btn_editar.TabIndex = 21;
+            btn_editar.Text = "Editar";
+            btn_editar.UseVisualStyleBackColor = false;
+            // 
             // Clientes
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(356, 450);
+            ClientSize = new Size(638, 450);
+            Controls.Add(btn_editar);
+            Controls.Add(btn_deletar);
+            Controls.Add(dataGridView1);
             Controls.Add(btn_voltar);
             Controls.Add(label7);
             Controls.Add(label6);
@@ -195,7 +231,7 @@
             Controls.Add(label2);
             Controls.Add(text_zap);
             Controls.Add(text_tele);
-            Controls.Add(text_end);
+            Controls.Add(text_cep);
             Controls.Add(text_email);
             Controls.Add(text_cpf);
             Controls.Add(text_nome);
@@ -204,6 +240,7 @@
             ForeColor = SystemColors.Control;
             Name = "Clientes";
             Text = "Clientes";
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -215,7 +252,7 @@
         private TextBox text_nome;
         private TextBox text_cpf;
         private TextBox text_email;
-        private TextBox text_end;
+        private TextBox text_cep;
         private TextBox text_tele;
         private TextBox text_zap;
         private Label label2;
@@ -225,5 +262,8 @@
         private Label label6;
         private Label label7;
         private Button btn_voltar;
+        private DataGridView dataGridView1;
+        private Button btn_deletar;
+        private Button btn_editar;
     }
 }
