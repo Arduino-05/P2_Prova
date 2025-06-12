@@ -33,6 +33,7 @@
             btn_pedido = new Button();
             btn_usuario = new Button();
             label1 = new Label();
+            btn_consultar = new Button();
             SuspendLayout();
             // 
             // btn_clientes
@@ -90,12 +91,23 @@
             label1.TabIndex = 4;
             label1.Text = "MENU";
             // 
+            // btn_consultar
+            // 
+            btn_consultar.BackColor = SystemColors.ControlText;
+            btn_consultar.Location = new Point(96, 300);
+            btn_consultar.Name = "btn_consultar";
+            btn_consultar.Size = new Size(169, 43);
+            btn_consultar.TabIndex = 5;
+            btn_consultar.Text = "CONSULTAR";
+            btn_consultar.UseVisualStyleBackColor = false;
+            // 
             // menu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(376, 450);
+            Controls.Add(btn_consultar);
             Controls.Add(label1);
             Controls.Add(btn_usuario);
             Controls.Add(btn_pedido);
@@ -115,5 +127,6 @@
         private Button btn_pedido;
         private Button btn_usuario;
         private Label label1;
+        private Button btn_consultar;
     }
 }

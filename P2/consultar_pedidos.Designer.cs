@@ -31,9 +31,9 @@
             text_cpf = new TextBox();
             label1 = new Label();
             label2 = new Label();
-            listView1 = new ListView();
+            list_pedidos = new ListView();
             list_itens = new ListView();
-            label_pedido = new Label();
+            label_total = new Label();
             label3 = new Label();
             btn_buscar = new Button();
             SuspendLayout();
@@ -63,13 +63,13 @@
             label2.TabIndex = 2;
             label2.Text = "CONSULTAR PEDIDOS";
             // 
-            // listView1
+            // list_pedidos
             // 
-            listView1.Location = new Point(33, 194);
-            listView1.Name = "listView1";
-            listView1.Size = new Size(245, 119);
-            listView1.TabIndex = 3;
-            listView1.UseCompatibleStateImageBehavior = false;
+            list_pedidos.Location = new Point(33, 194);
+            list_pedidos.Name = "list_pedidos";
+            list_pedidos.Size = new Size(245, 119);
+            list_pedidos.TabIndex = 3;
+            list_pedidos.UseCompatibleStateImageBehavior = false;
             // 
             // list_itens
             // 
@@ -79,14 +79,14 @@
             list_itens.TabIndex = 4;
             list_itens.UseCompatibleStateImageBehavior = false;
             // 
-            // label_pedido
+            // label_total
             // 
-            label_pedido.AutoSize = true;
-            label_pedido.Location = new Point(378, 172);
-            label_pedido.Name = "label_pedido";
-            label_pedido.Size = new Size(38, 15);
-            label_pedido.TabIndex = 5;
-            label_pedido.Text = "label3";
+            label_total.AutoSize = true;
+            label_total.Location = new Point(378, 172);
+            label_total.Name = "label_total";
+            label_total.Size = new Size(37, 15);
+            label_total.TabIndex = 5;
+            label_total.Text = "ITENS";
             // 
             // label3
             // 
@@ -114,9 +114,9 @@
             ClientSize = new Size(688, 450);
             Controls.Add(btn_buscar);
             Controls.Add(label3);
-            Controls.Add(label_pedido);
+            Controls.Add(label_total);
             Controls.Add(list_itens);
-            Controls.Add(listView1);
+            Controls.Add(list_pedidos);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(text_cpf);
@@ -131,9 +131,9 @@
         private TextBox text_cpf;
         private Label label1;
         private Label label2;
-        private ListView listView1;
+        private ListView list_pedidos;
         private ListView list_itens;
-        private Label label_pedido;
+        private Label label_total;
         private Label label3;
         private Button btn_buscar;
     }

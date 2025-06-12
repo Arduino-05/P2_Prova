@@ -38,10 +38,43 @@ namespace P2
                 }
             }
         }
+        class PedidoInfo
+        {
+            public string Itens { get; set; }
+            public string Total { get; set; }
+        }
 
         private void btn_buscar_Click(object sender, EventArgs e)
         {
+            string cpf = text_cpf.Text.Trim();
+            list_pedidos.Items.Clear();
+            list_itens.Items.Clear();
+            label_total.Text = "";
 
+            if (string.IsNullOrEmpty(cpf)) return;
+
+            var linhas = File.ReadAllLines(caminho_pedidos).Skip(1); 
+
+            foreach (var linha in linhas)
+            {
+                var partes = linha.Split(';');
+                if (partes.Length != 3) continue;
+
+                if (partes[0] == cpf)
+                {
+                    string itens = partes[1].Trim('"');
+                    string total = partes[2];
+
+                    var item = new ListViewItem($"Pedido - Total: R${total}");
+                    item.Tag = new PedidoInfo { Itens = itens, Total = total };
+                    list_pedidos.Items.Add(item);
+                }
+            }
+
+            if (list_pedidos.Items.Count == 0)
+            {
+                MessageBox.Show("Nenhum pedido encontrado para este CPF.");
+            }
         }
     }
 }
