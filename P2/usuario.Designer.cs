@@ -52,32 +52,38 @@
             // 
             // btn_deletar
             // 
+            btn_deletar.BackColor = SystemColors.ActiveCaptionText;
+            btn_deletar.ForeColor = SystemColors.ControlLightLight;
             btn_deletar.Location = new Point(282, 227);
             btn_deletar.Name = "btn_deletar";
             btn_deletar.Size = new Size(75, 23);
             btn_deletar.TabIndex = 1;
             btn_deletar.Text = "Deletar";
-            btn_deletar.UseVisualStyleBackColor = true;
+            btn_deletar.UseVisualStyleBackColor = false;
             btn_deletar.Click += btn_deletar_Click;
             // 
             // btn_editar
             // 
+            btn_editar.BackColor = SystemColors.ActiveCaptionText;
+            btn_editar.ForeColor = SystemColors.ControlLightLight;
             btn_editar.Location = new Point(201, 227);
             btn_editar.Name = "btn_editar";
             btn_editar.Size = new Size(75, 23);
             btn_editar.TabIndex = 2;
             btn_editar.Text = "Editar";
-            btn_editar.UseVisualStyleBackColor = true;
+            btn_editar.UseVisualStyleBackColor = false;
             btn_editar.Click += btn_editar_Click;
             // 
             // btn_salvar
             // 
+            btn_salvar.BackColor = SystemColors.ActiveCaptionText;
+            btn_salvar.ForeColor = SystemColors.ControlLight;
             btn_salvar.Location = new Point(151, 174);
             btn_salvar.Name = "btn_salvar";
             btn_salvar.Size = new Size(75, 23);
             btn_salvar.TabIndex = 3;
             btn_salvar.Text = "Salvar";
-            btn_salvar.UseVisualStyleBackColor = true;
+            btn_salvar.UseVisualStyleBackColor = false;
             btn_salvar.Click += btn_salvar_Click;
             // 
             // text_email
@@ -125,6 +131,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(396, 450);
             Controls.Add(label3);
             Controls.Add(label2);

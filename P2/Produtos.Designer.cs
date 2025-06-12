@@ -102,32 +102,38 @@
             // 
             // btn_salvar
             // 
+            btn_salvar.BackColor = SystemColors.ActiveCaptionText;
+            btn_salvar.ForeColor = Color.White;
             btn_salvar.Location = new Point(179, 216);
             btn_salvar.Name = "btn_salvar";
             btn_salvar.Size = new Size(75, 23);
             btn_salvar.TabIndex = 7;
             btn_salvar.Text = "Salvar";
-            btn_salvar.UseVisualStyleBackColor = true;
+            btn_salvar.UseVisualStyleBackColor = false;
             btn_salvar.Click += btn_salvar_Click;
             // 
             // btn_deletar
             // 
+            btn_deletar.BackColor = SystemColors.ActiveCaptionText;
+            btn_deletar.ForeColor = Color.White;
             btn_deletar.Location = new Point(647, 73);
             btn_deletar.Name = "btn_deletar";
             btn_deletar.Size = new Size(75, 23);
             btn_deletar.TabIndex = 9;
             btn_deletar.Text = "Deletar";
-            btn_deletar.UseVisualStyleBackColor = true;
+            btn_deletar.UseVisualStyleBackColor = false;
             btn_deletar.Click += btn_deletar_Click;
             // 
             // btn_editar
             // 
+            btn_editar.BackColor = SystemColors.ActiveCaptionText;
+            btn_editar.ForeColor = Color.White;
             btn_editar.Location = new Point(566, 73);
             btn_editar.Name = "btn_editar";
             btn_editar.Size = new Size(75, 23);
             btn_editar.TabIndex = 10;
             btn_editar.Text = "Editar";
-            btn_editar.UseVisualStyleBackColor = true;
+            btn_editar.UseVisualStyleBackColor = false;
             btn_editar.Click += btn_editar_Click;
             // 
             // data_produto
@@ -144,6 +150,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(750, 450);
             Controls.Add(btn_editar);
             Controls.Add(btn_deletar);
@@ -156,6 +163,7 @@
             Controls.Add(text_descricao);
             Controls.Add(text_preco);
             Controls.Add(text_nome);
+            ForeColor = Color.Black;
             Name = "Produtos";
             Text = "Produtos";
             Load += Produtos_Load;
