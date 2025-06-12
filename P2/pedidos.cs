@@ -42,5 +42,23 @@ namespace P2
         private void pedidos_Load(object sender, EventArgs e)
         {
         }
+
+        private void btn_buscar_Click(object sender, EventArgs e)
+        {
+            string cpf = text_cpf.Text.Trim();
+
+            var linhas = File.ReadAllLines(caminho_clientes);
+            foreach (var linha in linhas.Skip(1))
+            {
+                var dados = linha.Split(';');
+                if (dados[1] == cpf)
+                {
+                    text_nome.Text = dados[0]; 
+                    return;
+                }
+            }
+
+            MessageBox.Show("Cliente não encontrado!");
+        }
     }
 }

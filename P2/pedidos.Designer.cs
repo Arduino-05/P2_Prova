@@ -44,6 +44,7 @@
             label5 = new Label();
             label_total = new Label();
             label6 = new Label();
+            btn_buscar = new Button();
             ((System.ComponentModel.ISupportInitialize)bindingSource1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)data_itens).BeginInit();
             SuspendLayout();
@@ -167,11 +168,22 @@
             label6.TabIndex = 13;
             label6.Text = "Pedidos";
             // 
+            // btn_buscar
+            // 
+            btn_buscar.Location = new Point(179, 168);
+            btn_buscar.Name = "btn_buscar";
+            btn_buscar.Size = new Size(75, 23);
+            btn_buscar.TabIndex = 14;
+            btn_buscar.Text = "Buscar";
+            btn_buscar.UseVisualStyleBackColor = true;
+            btn_buscar.Click += btn_buscar_Click;
+            // 
             // pedidos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btn_buscar);
             Controls.Add(label6);
             Controls.Add(label_total);
             Controls.Add(label5);
@@ -212,5 +224,6 @@
         private Label label5;
         private Label label_total;
         private Label label6;
+        private Button btn_buscar;
     }
 }

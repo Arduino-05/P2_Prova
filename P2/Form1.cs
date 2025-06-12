@@ -42,7 +42,7 @@ namespace P2
 
             for (int i = 1; i < linhas.Length; i++)
             {
-                string[] dados = linhas[i].Split(',');
+                string[] dados = linhas[i].Split(';');
 
                 if (dados.Length == 2)
                 {
