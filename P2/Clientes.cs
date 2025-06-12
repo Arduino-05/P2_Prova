@@ -92,11 +92,11 @@ namespace P2
         private void btn_cadastrar_Click(object sender, EventArgs e)
         {
             string nome = text_nome.Text.Trim();
+            string cpf = text_cpf.Text.Trim();
             string email = text_email.Text.Trim();
-            string cpf = text_cpf.Text.Trim();  
-            string zap = text_zap.Text.Trim();
+            string end = text_cep.Text.Trim();
             string tele = text_tele.Text.Trim();
-            string end = text_cep.Text.Trim();   
+            string zap = text_zap.Text.Trim();
 
             if (string.IsNullOrEmpty(nome) ||
                 string.IsNullOrEmpty(email) ||
