@@ -100,18 +100,21 @@
             // 
             // btn_buscar
             // 
+            btn_buscar.BackColor = SystemColors.ActiveCaptionText;
+            btn_buscar.ForeColor = SystemColors.ControlLight;
             btn_buscar.Location = new Point(104, 120);
             btn_buscar.Name = "btn_buscar";
             btn_buscar.Size = new Size(75, 23);
             btn_buscar.TabIndex = 7;
             btn_buscar.Text = "Buscar";
-            btn_buscar.UseVisualStyleBackColor = true;
+            btn_buscar.UseVisualStyleBackColor = false;
             btn_buscar.Click += btn_buscar_Click;
             // 
             // consultar_pedidos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(688, 450);
             Controls.Add(btn_buscar);
             Controls.Add(label3);
@@ -121,6 +124,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(text_cpf);
+            ForeColor = SystemColors.ActiveCaptionText;
             Name = "consultar_pedidos";
             Text = "consultar_pedidos";
             ResumeLayout(false);
