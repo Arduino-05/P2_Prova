@@ -35,6 +35,15 @@ namespace P2
             return;
         }
 
+        private void btn_pedido_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            pedidos pedidos = new pedidos();
+            pedidos.ShowDialog();
+            this.Close();
+            return;
+        }
+
 
     }
 }
