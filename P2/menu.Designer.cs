@@ -44,6 +44,7 @@
             btn_clientes.TabIndex = 0;
             btn_clientes.Text = "CLIENTES";
             btn_clientes.UseVisualStyleBackColor = false;
+            btn_clientes.Click += btn_clientes_Click;
             // 
             // btn_produto
             // 
