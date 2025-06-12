@@ -105,6 +105,20 @@ namespace P2
         }
 
 
+        private void btn_editar_Click(object sender, EventArgs e)
+        {
+            if (data_usuarios.CurrentRow == null) return;
+            int index = data_usuarios.CurrentRow.Index;
+            string[] linhas = File.ReadAllLines(caminho_arquivo).ToArray();
+            if (index + 1 >= linhas.Length) return;
+            string novaLinha = $"{text_email.Text};{text_senha.Text}";
+            linhas[index + 1] = novaLinha;
+            File.WriteAllLines(caminho_arquivo, linhas);
+            MessageBox.Show("Usuario editado com sucesso!");
+            carregar_usuarios();
+            text_email.Clear();
+            text_senha.Clear();
+        }
 
 
     }
