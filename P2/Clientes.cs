@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -39,6 +40,14 @@ namespace P2
             this.Close();
             return;
         }
+        public class ViaCepResponse
+        {
+            public string cep { get; set; }
+            public string logradouro { get; set; }
+            public string bairro { get; set; }
+            public string localidade { get; set; }
+            public string uf { get; set; }
+        }
 
         private async void buscar_end()
         {
@@ -52,23 +61,31 @@ namespace P2
 
             try
             {
-                using (HttpClient client = new HttpClient())
+                using (var client = new HttpClient())
                 {
                     string url = $"https://viacep.com.br/ws/{cep}/json/";
                     string json = await client.GetStringAsync(url);
 
-                    var endereco = JsonConvert.DeserializeObject<ViaCepResponse>(json);
+                    var endereco = JsonSerializer.Deserialize<ViaCepResponse>(json);
 
-                    text_cep.Text = $"{endereco.cep} - {endereco.logradouro}, {endereco.bairro}, {endereco.localidade}-{endereco.uf}";
+                    if (endereco != null && endereco.cep != null)
+                    {
+                        text_cep.Text = $"{endereco.cep} - {endereco.logradouro}, {endereco.bairro}, {endereco.localidade}-{endereco.uf}";
+                    }
+                    else
+                    {
+                        MessageBox.Show("CEP não encontrado.");
+                    }
                 }
             }
-            catch (Exception ex)
+            catch
             {
-                MessageBox.Show("Erro ao buscar CEP: " + ex.Message);
+                MessageBox.Show("Erro ao buscar CEP.");
             }
         }
 
-        
+
+
 
         private void btn_cadastrar_Click(object sender, EventArgs e)
         {
